@@ -9,7 +9,7 @@
 @include('layouts.headerhero')
 
 <!-- Featured Products -->
-
+<br>
 <div class="small-container">
     <h2 class="title">Featured Products</h2>
 
