@@ -9,6 +9,7 @@
         min-height: 100vh;
         display: flex;
         flex-direction: column;
+        overflow-x: hidden;
     }
 
     .logo img{
@@ -53,6 +54,26 @@
         color: #555;
     }
     
+    .snbtn{
+        display: block;
+        position: absolute;
+        background-color: #89897f;
+        color: white;
+        padding: 15px 25px;
+        border: none;
+        outline: none;
+        border-radius: 15px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        cursor: pointer;
+        top: 480px;
+        left: 900px;
+    }
+
+    .snbtn:hover{
+        background-color: #ff523b;
+    }
+
     .container {
         max-width: 1300px;
         margin: auto;

@@ -17,6 +17,7 @@
                 <img src="{{ URL::asset('images/menu.png')}}" class="menu-icon" onclick="menutoggle()">
             </div>
             <!-- Navbar ends here -->
+                    <button class='snbtn'>Shop Now</button>
                     <img src="{{ URL::asset('images/hero.png')}}">
             </div>
         </div>
