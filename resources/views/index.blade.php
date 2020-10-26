@@ -1,6 +1,6 @@
 @extends('layouts.templ')
 
-@section('title', "RedStore")
+@section('title', "Little Hippie")
 
 
 

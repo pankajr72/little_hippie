@@ -64,20 +64,6 @@
 
                 <p>$99.99</p>
             </div>
-            <div class="col-4">
-                <img src="{{ URL::asset('images/product-11.jpg')}}" alt="">
-                <h4>Casual Shoes</h4>
-                <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div>
-
-                <p>$19.99</p>
-            </div>
-            <div class="col-4">
-                <img src="{{ URL::asset('images/product-12.jpg')}}" alt="">
-                <h4>Track Pants</h4>
-                <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div>
-
-                <p>$79.99</p>
-            </div>
         </div>
     </div>
 

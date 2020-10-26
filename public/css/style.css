@@ -496,7 +496,7 @@
         margin: 80px auto;
     }
 
-    table{
+    .tcart{
         width: 100%;
         border-collapse: collapse;
     }
@@ -506,7 +506,7 @@
         flex-wrap: wrap;    
     }
 
-    th{
+    .tcart th{
         text-align: left;
         padding: 5px;
         color: #fff;
@@ -514,17 +514,17 @@
         font-weight: normal;
     }
 
-    td{
+    .tcart td{
         padding: 10px 5px;
     }
 
-    td input{
+    .tcart td input{
         width: 40px;
         height: 30px;
         padding: 5px;
     }
 
-    td a{
+    .tcart td a{
         color:#ff523b;
         font-size: 12px;
     }
@@ -535,7 +535,7 @@
         font-size: 15px;
         padding: 15px 20px;
     }
-    td img{
+    .tcart td img{
         width: 80px;
         height: 80px;
         margin-right: 10px;
@@ -546,17 +546,17 @@
         justify-content: flex-end;
     }
 
-    .total-price table{
+    .total-price .tcart {
         border-top: 3px solid #ff523b;
         width: 100%;
         max-width: 350px;
     }
 
-    td:last-child{
+    .tcart td:last-child{
         text-align: right;
     }
 
-    th:last-child{
+    .tcart th:last-child{
         text-align: right;
     }
 
@@ -635,4 +635,60 @@
         margin-top: 8px;
         transform: translateX(105px);
         transition: transform 1s;
+    }
+
+
+    /* -------Css for dashboard------- */
+
+    .dcontent{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-bottom: 40px;
+    }
+
+    .rows
+    {        
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .cols-3
+    {
+        flex-basis: 25%;
+        min-width: 300px;
+        min-height: 500px;
+        padding: 45px 90px ;
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .cols-9
+    {
+        flex-basis: 75%;
+        min-width: 300px;
+        min-height: 500px;
+        padding: 15px;
+    }
+
+    .dnav{
+        list-style-type: none;
+    }
+
+    .dnav li{
+        padding: 10px 0;
+    }
+
+    .dnav li:hover a{
+        color: #ff523b;
+    }
+
+    .sobtn{
+        background-color: #ee8274;
+        color: white;
+        border:none;
+        border-radius: 10px;
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+
+    .sobtn:hover{
+        background-color: #ff523b;
     }

@@ -48,7 +48,7 @@
         </table>
 
         <div class="total-price">
-            <table>
+            <table class="tcart">
                 <tr>
                     <td>Subtotal</td>
                     <td>Rs. @php echo $subtotal @endphp</td>

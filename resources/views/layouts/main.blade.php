@@ -1,47 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <meta name="Description" content="Enter your description here" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
-        />
-        <link rel="stylesheet" href="assets/css/style.css" />
-        <title>@yield('title')</title>
-    </head>
-    <body>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3 border-right" style="min-height: 100vh;">
-                    <br><br><br>
-                    <nav class="nav flex-column py-4 text-center">
-                        <a class="nav-link" href="/dashboard">Dashboard</a>
-                        <a class="nav-link" href="{{ route('productscategory.index') }}">Products Category</a>
-                        <a class="nav-link" href="{{ route('products.index') }}">Products</a>
-                        <a class="nav-link" href="{{ route('productsimages.index') }}">Products Images</a>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@yield('title')</title>
+
+    <link rel="stylesheet" href="{{ asset('css/style.css' )}}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    
+    @include('layouts.header')  
+    <main class="dcontent">
+        
+
+        <div class="rows">
+            <div class="cols-3">
+                <ul class="dnav">
+                    <li>
+                        <a href="/dashboard">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('productscategory.index') }}">Products Category</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('products.index') }}">Products</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('productsimages.index') }}">Coupons</a>
+                    </li>
+                    <li>
+                        <a href="">Customers</a>
+                    </li>
+                    <li>
+                        <a href="">Orders</a>
+                    </li>
+                    <li>
+                        <a href="">Deliveries</a>
+                    </li>
+                    <li>
                         <form action="{{ route('logout') }}" method="post" style="display:inline-block;">
                         @csrf
-                            <button type="submit" class="btn btn-light">Logout</button>
+                            <button type="submit" class="sobtn">Logout</button>
                         </form>
+                    </li>
 
-                    </nav>
-                </div>
-
-                <div class="col-md-9 py-2">
-                    @yield('content')
-                </div>
+                </ul>   
+            </div>
+            <div class="cols-9">
+                @yield('content')
             </div>
         </div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    </body>
+        
+    </main>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and IOS Mobile Phone.</p>
+                    <div class="app-logo">
+                        <img src="{{ URL::asset('images/play-store.png')}}" alt="">
+                        <img src="{{ URL::asset('images/app-store.png')}}" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="{{ URL::asset('images/logo.png')}}" alt="">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - Pankaj </p>
+        </div>
+    </div>
+@yield('scripts')
+</body>
+
 </html>
