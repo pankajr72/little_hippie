@@ -713,3 +713,40 @@
     .sobtn:hover{
         background-color: #ff523b;
     }
+
+    .dtable{
+        width: 100%;
+    }
+
+    .dtable img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .dtable th{
+        padding-bottom: 15px;
+        text-align: center;
+    }
+
+    .dtable td{
+        vertical-align: middle;
+        text-align: center;
+        padding: 15px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .ddbtn{
+        background-color: rgb(243, 217, 161);
+        font-size: 15px;
+        padding: 10px 25px;
+        color: white;
+        border-radius: 15px;
+        outline: none;
+        border: none;
+        transition: 1s;
+    }
+
+    .ddbtn:hover{
+        background-color: #ee8274;
+        cursor: pointer;
+    }

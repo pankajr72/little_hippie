@@ -5,7 +5,7 @@
 @section('content')
     <br>
     <a href="{{ route('productscategory.create') }}" class="btn btn-primary btn-block">Add Product Category</a><br>
-    <table class="table">
+    <table class="table dtable">
         <thead>
             <tr>
                 <th>Id</th>
@@ -19,12 +19,12 @@
                     <td>{{ $productCategory->id }}</td>
                     <td>{{ $productCategory->category }}</td>
                     <td>
-                        <a href="{{route('productscategory.edit',$productCategory->id)}}" class="btn btn-light">Edit</a>
+                        <a href="{{route('productscategory.edit',$productCategory->id)}}" class="ddbtn">Edit</a>
                         <form style="display:inline-block;" action="{{route('productscategory.destroy',$productCategory->id)}}" method="post">
                         @csrf 
                         @method('DELETE')
 
-                            <button type="submit" class="btn btn-danger">Delete</button>
+                            <button type="submit" class="ddbtn">Delete</button>
                         </form>
                     </td>
                 </tr>

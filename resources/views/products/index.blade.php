@@ -5,7 +5,7 @@
 @section('content')
     <br>
     <a href="{{ route('products.create') }}" class="btn btn-primary btn-block">Add Product</a><br>
-    <table class="table">
+    <table class="table dtable">
         <thead>
             <tr>
                 <th>Id</th>
@@ -17,6 +17,7 @@
                 <th>Operations</th>
             </tr>
         </thead>
+        
         <tbody>
             @foreach($products as $product)
                 <tr>
@@ -27,12 +28,12 @@
                     <td>{{ $product->p_price }}</td>
                     <td>{{ $product->productCategory->category }}</td>
                     <td>
-                        <a href="{{route('products.edit',$product->id)}}" class="btn btn-light">Edit</a>
+                        <a href="{{route('products.edit',$product->id)}}" class="ddbtn">Edit</a><br><br>
                             <form style="display:inline-block;" action="{{route('products.destroy',$product->id)}}" method="post">
                             @csrf 
                             @method('DELETE')
 
-                                <button type="submit" class="btn btn-danger">Delete</button>
+                                <button type="submit" class="ddbtn">Delete</button>
                             </form>
                     </td>
                 </tr>

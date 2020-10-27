@@ -31,6 +31,9 @@
                         <a href="{{ route('products.index') }}">Products</a>
                     </li>
                     <li>
+                        <a href="{{ route('productsimages.index') }}">Product Images</a>
+                    </li>
+                    <li>
                         <a href="">Coupons</a>
                     </li>
                     <li>
